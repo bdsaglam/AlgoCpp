@@ -38,7 +38,6 @@ index_type find_a_peak(const vector<int>& vec, index_type start = 0, index_type 
 }
 
 bool is_peak(const vector<int>& vec, index_type index) {
-    if (vec.size() == 1) return true;
     return (index == 0 || vec[index] >= vec[index - 1])
     && (index == vec.size() - 1 || vec[index] >= vec[index + 1]);
 }
